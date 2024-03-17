@@ -1,0 +1,872 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta content="width=device-width, initial-scale=1.0" name="viewport">
+<title>Mikasa Doors</title>
+<meta content="" name="description">
+<meta content="" name="keywords">
+<link rel="shortcut icon" href="https://www.mikasadoors.com/sites/all/themes/mikasa/favicon.ico" type="image/vnd.microsoft.icon" />
+<link href="https://fonts.googleapis.com/css2?family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+<link href="assets/css/bootstrap.min.css" rel="stylesheet" />
+<link href="assets/css/owl.carousel.min.css" rel="stylesheet">
+<link href="assets/css/style.css" rel="stylesheet">
+<script type="text/javascript" src="assets/js/webform_self.js"></script> 
+<script src="assets/js/jquery-1.7.2.min.js"></script> 
+<script type="text/javascript">
+    function ShowHideDiv() {
+        var ddlPassport = document.getElementById("ddlPassport");
+        var dvPassport = document.getElementById("dvPassport");
+        
+        dvPassport.style.display = ddlPassport.value == "Others" ? "block" : "none";
+
+    }
+    
+     function ShowHideDiv2() {
+        var Type_of_Enquiry = document.getElementById("Type_of_Enquiry");
+        var dvPassport = document.getElementById("enq_other");
+        
+        dvPassport.style.display = Type_of_Enquiry.value == "Others" ? "block" : "none";
+
+    }
+</script> 
+<script type="text/javascript">
+
+      function ValidationEvent()
+      {
+	  
+	 
+         if( document.WFclads.Name.value == "" || document.WFclads.Name.value == " " )
+         {
+		
+            alert( "Please Fill Your Name" );
+            document.WFclads.Name.focus() ;
+            return false;
+         }
+         if( document.WFclads.Email.value == "" || document.WFclads.Email.value == " " )
+         {
+            alert( "Please Provide Your Email Address" );
+            document.WFclads.Email.focus() ;
+            return false;
+         }
+		 if(document.WFclads.Email.value!=" "){
+		 
+		  var x = document.WFclads.Email.value;
+		 
+			var atpos = x.indexOf("@");
+			var dotpos = x.lastIndexOf(".");
+			if (atpos<1 || dotpos<atpos+2 || dotpos+2>=x.length) {
+			alert("Not A Valid Email Address");
+			return false;
+			}
+		 }
+		 
+		 if( document.WFclads.Phone.value == "" || document.WFclads.Phone.value == " " )
+         {
+            alert( "Please Provide Your Mobile Number!" );
+            document.WFclads.Phone.focus() ;
+            return false;
+         }
+		 
+		  if( document.WFclads.Phone.value !="" )
+         {
+            var mob = /^\(?([0-9]{3})\)?[-. ]?([0-9]{3})[-. ]?([0-9]{4})$/;
+var txtMobile = document.WFclads.Phone.value;
+if (mob.test(txtMobile) == false) {
+    alert("Please Enter 10 Digit Number.");
+    
+    return false;
+         }
+		 }
+		 
+		 
+	
+		 
+		  if( document.WFclads.Type_of_Enquiry.value == "" || document.WFclads.Type_of_Enquiry.value == " " )
+         {
+		
+            alert( "Please Select Enquiry Type" );
+            document.WFclads.Type_of_Enquiry.focus() ;
+            return false;
+         }
+		 
+		 
+		 
+         if( document.WFclads.Profession.value == "" || document.WFclads.Profession.value == " " )
+         {
+		
+            alert( "Please Select Visitor Type" );
+            document.WFclads.Profession.focus() ;
+            return false;
+         }
+  
+         
+         if( document.WFclads.Profession.value == "Others")
+         {
+		 if( document.WFclads.ProfesstionOtherText.value == "" ||  document.WFclads.ProfesstionOtherText.value == " ")
+         {
+            alert( "Please Fill Your Other Profession" );
+            document.WFclads.ProfesstionOtherText.focus() ;
+            return false;
+         }
+         }
+
+        
+	 if( document.WFclads.Profession.value != "Home Owner")
+         {
+		   if( document.WFclads.FirmName.value == "" ||  document.WFclads.FirmName.value == " ")
+         {
+            alert( "Please Fill Your Firm Name" );
+            document.WFclads.FirmName.focus() ;
+            return false;
+         }
+         }
+
+
+
+		 
+		 
+         
+		 
+		  if( document.WFclads.Country.value == "" || document.WFclads.Country.value == " " )
+         {
+		
+            alert( "Please Select Country" );
+            document.WFclads.Country.focus() ;
+            return false;
+         }
+		 
+		 
+		 		  if( document.WFclads.State.value == "" || document.WFclads.State.value == " " )
+         {
+		
+            alert( "Please Select Your State" );
+            document.WFclads.State.focus() ;
+            return false;
+         }
+		 
+		if( document.WFclads.City.value == "" || document.WFclads.City.value == " " )
+         {
+		
+            alert( "Please Select Your City" );
+            document.WFclads.City.focus() ;
+            return false;
+         }
+		 
+		 
+		 
+		
+		 
+		 
+		 
+		
+		
+         return( true );
+      }
+   
+</script>
+<style>
+#test {
+    display: flex !important;
+}
+</style>
+
+
+
+
+<style>
+    
+    .bgwhite {
+  font-size: 15px !important;
+}
+    
+</style>
+
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=AW-11485834164"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'AW-11485834164');
+  gtag('config', 'G-WCYJ18VNXK');
+</script>
+
+
+
+<!-- Global site tag (gtag.js) - Google Analytics -->
+
+<script type="text/javascript" async="" src="https://www.googletagmanager.com/gtag/js?id=G-WCYJ18VNXK&amp;l=dataLayer&amp;cx=c"></script>
+
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-104074759-1"></script>
+
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-104074759-1');
+</script>
+</head>
+
+<body>
+<section class="bannerbg">
+  <div class="header-top">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-8 col-md-6">
+          <div class="mlogo"><img src="assets/images/logo.png" /></div>
+        </div>
+        <div class="col-lg-4 col-md-6">
+         <!-- <div class="contact">
+            <div class="">Toll Free : 1800 833 0004</div>
+            <div class="fs32">SMS 'GREENLAM' to 53030</div>
+          </div>-->
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-8 col-md-6 bannertext">
+		<div class="bannerTitle">		  
+		  ONE STOP WOODEN DOOR SOLUTIONS<br/>
+INTRODUCING<br/>
+ <span>MIKASA DOORS & FRAMES</span>
+</div>
+		 
+		
+		</div>
+      <div class="col-lg-4 col-md-6">
+        <form method="post" name="WFclads" id="Greenlam_India">
+          <input type="hidden" name="webformId" value="11650">
+          <input type="hidden" name="href" value="https://www.mikasadoors.com/contact.html/">
+          <input type="hidden" name="origin" value="https://www.mikasadoors.com/">
+          <input type="hidden" name="protocol" value="https:/">
+          <input type="hidden" name="host" value="https://www.mikasadoors.com/">
+          <input type="hidden" name="hostname" value="https://www.mikasadoors.com/">
+          <input type="hidden" name="port" value="/">
+          <input type="hidden" name="pathname" value="/laminates-products-landingpage/">
+          <input type="hidden" name="search" value="/">
+          <input type="hidden" name="hash" value="/">
+          <input type="hidden" name="cookies" value="">
+          <input type="hidden" name="form_type" value="">
+          <input type="hidden" name="client_id" value="181">
+          <input type="hidden" name="lp_url" value="">
+          
+          <input type="hidden" name="Source" value="Google PPC Campaign">
+          <input type="hidden" name="mx_Brand_Wise_Source_Level_3" value="Mikasa Doors PPC">
+          
+          <input type="hidden" name="utm_source" value="">
+          <input type="hidden" name="utm_medium" value="">
+          <input type="hidden" name="utm_campaignname" value="">
+          <input type="hidden" name="utm_campaignid" value="">
+          <input type="hidden" name="utm_adgroupname" value="">
+          <input type="hidden" name="utm_adgroupid" value="">
+          <input type="hidden" name="utm_keyword" value="">
+          <input type="hidden" name="utm_website" value="">
+          <input type="hidden" name="utm_geo" value="">
+          <input type="hidden" name="utm_adtextid" value="">
+          <!--<input type="hidden" name="utm_adgroupid" value="">-->
+          <input type="hidden" name="utm_bannername" value="">
+          <input type="hidden" name="utm_websitecategory" value="">
+          <input type="hidden" name="utm_form_source_url" value="">
+          <input type="hidden" name="utm_type" value="">
+          <input type="hidden" name="gclid" value="">
+          <input type="hidden" name="action_url" value="">
+          <input name="redirect_url" value="https://www.mikasadoors.com/wooden-doors/thankyou.php" type="hidden">
+          <!--<input name="Product[]" type="hidden" value="Laminates">-->
+          <div class="enquery-form">
+            <div class="enquery-title">Contact Us Today</div>
+            <div class="row" id="test">
+              <div class="col-sm-6 mb-2">
+                <input class="form-control custom-control" type="text" placeholder="Name" name="Name" />
+              </div>
+              <div class="col-sm-6 mb-2">
+                <input class="form-control custom-control" type="email" placeholder="Email" name="Email" />
+              </div>
+              <div class="col-sm-6 mb-2">
+                <input class="form-control custom-control" type="tel" placeholder="Contact Number"  name="Phone" class="form-textbox ">
+              </div>
+             
+             
+              <div class="col-sm-6 mb-2">
+                <select id="Type_of_Enquiry"  name="Type_of_Enquiry" class="form-select custom-control" >
+                  <option value="">Enquiry Type</option>
+                  <option value="Product Enquiry">Product Enquiry</option>
+                  <option value="Price Enquiry">Price Enquiry</option>
+                  <option value="Catalogue or Sample">Catalogue or Sample</option>
+                </select>
+              </div>
+              <div class="col-sm-12 mb-2" id="enq_other" style="display:none;">
+                <div class="input-group-Box">
+                  <input class="form-control custom-control" type="text"  name="enquiryText" class="form-textbox ">
+                </div>
+              </div>
+              <div class="col-sm-6 mb-2">
+                <select class="form-select custom-control" name="Profession" id ="ddlPassport" onchange = "ShowHideDiv()">
+                  <option value="">Visitor Type</option>
+                  <option value="Architect">Architect</option>
+                  <option value="Interior Designer">Interior Designer</option>
+                  <option value="Contractor">Contractor</option>
+                  <!-- <option value="Contractor Firm">Contractor Firm</option> -->
+                  <option value="Builder/ Developer">Builder/ Developer</option>
+                  <option value="OEM">OEM</option>
+                  <option value="PMC">PMC</option>
+                  <option value="Dealer">Dealer</option>
+                  <option value="Distributor">Distributor</option>
+                  <option value="Corporate">Corporate</option>
+                  <option value="Home Owner">Home Owner</option>
+                  <option value="Others">Others</option>
+                </select>
+              </div>
+				  
+				<input class="form-control custom-control" type="hidden" placeholder="Firm Name" value="--"  name="FirmName" />
+                <input class="form-control custom-control" type="hidden" value="--"  name="ProfesstionOtherText" class="form-textbox ">
+             <!-- <div class="col-sm-6 mb-2" id="dvPassport" >
+                <div class="input-group-Box">
+                 
+                </div>
+              </div>-->
+             
+             <input type="hidden" name="Product[]" value="Mikasa Doors & Frames">
+             <!-- <div class="col-sm-12 mb-2">
+                <select class="form-select custom-control" required="required" name="Product[]" id="Product[]" class="form-textbox ">
+                    <option value="">Product Category</option>
+                         <option  value="High Pressure Laminates">High Pressure Laminates</option>
+                            <option value="Compact Boards">Compact Boards</option>
+                            <option value="Stratus Kitchen Laminates">Stratus Kitchen Laminates</option>
+                            <option value="Exterior Cladding">Exterior Cladding</option>
+
+                         
+                         </select>
+              </div>-->
+             
+              <div class="col-sm-6 mb-2">
+				 
+                <select class="form-select custom-control" name="Country" id="elm_select_1432641944049_Country" class="form-textbox">
+                           <option value="">Select Country</option>
+          <option value="India">India</option>
+
+                         
+                         </select>
+              </div>
+              <!--<input type="hidden" name="State" value="--">
+				<input type="hidden" name="City" value="--">-->
+				
+              <div class="col-sm-6 mb-2" id="field_574">
+                <select class="form-select custom-control" name="State" id="elm_select_1432641944049_State" class="form-textbox ">
+                <option value="">Select State</option>
+                </select>
+              </div>
+              <div class="col-sm-6 mb-2">
+                <select class="form-select custom-control" name="City" id="elm_select_1432641944049_City" class="form-textbox ">
+                <option selected="selected" value="">Select City</option>
+                </select>
+              </div>
+              
+              
+              <div class="col-sm-12 mb-2">
+                <textarea  name="Comments" class="form-control custom-control h50"  placeholder="Comments" id="elm_textarea_1432642204946_Comments"></textarea>
+              </div>
+              <div class="col-sm-12 mb-2">
+                <input  class="btn form-button " type="submit" name="Submit" value="Submit">
+              </div>
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+  <!-- Shape Bottom -->
+  <div class="shape-bottom">
+    <svg style="display:none" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none" viewBox="0 0 1920 170">
+      <defs>
+        <linearGradient x1="49.253%" y1="85.804%" x2="49.253%" y2="43.074%" id="a">
+          <stop stop-color="#f8f8f8" offset="0%"></stop>
+          <stop stop-color="#f8f8f8" offset="100%"></stop>
+        </linearGradient>
+      </defs>
+      <g fill="none">
+        <path d="M1920 4.719v69.5c-362.63 60.036-692.797 55.536-990.5-13.5C565.833-23.615 256 12.813 0 170L1 4.719h1919z" fill="url(#a)" transform="rotate(180 960.5 87.36)"></path>
+        <path d="M1 170V99c269.033-70.44 603.533-66.44 1003.5 12C1494 207 1921 4.719 1921 4.719L1920 170H1z" fill-opacity=".3" fill="#f8f8f8"></path>
+        <path d="M1 170.75V99C373.115 4.216 705.281-4.951 997.5 71.5c365.667 95.667 673.5 73.406 923.5-66.781l-1 166.031H1z" fill-opacity=".3" fill="#f8f8f8"></path>
+        <path d="M1 170v-67C400.333-1.333 744.167-19 1032.5 50c432.5 103.5 754 19.219 888.5-45.281l-1 166.031L1 170z" fill-opacity=".35" fill="#f8f8f8"></path>
+      </g>
+    </svg>
+  </div>
+</section>
+<section class="laminates">
+  <div class="container">
+    <div class="laminates-title">Fire-Rated Door Sets</div>
+    <div class="blueline"></div>
+	  <div class="subtitle">Complying with international quality and safety standards, Mikasa fire rated doors and doorsets are engineered to form a reliable part of your overall fire protection system. We deploy years of experience and expertise coupled with superior quality raw materials to give you fire rated doors you can count on. 
+</div>
+	  <div class="owl-carousel 3slider">
+            <div class="item">
+              <div class="degree-wrap"> <img src="assets/images/fire1.jpg" alt="" /></div>
+            </div>
+		   <div class="item">
+              <div class="degree-wrap"> <img src="assets/images/fire2.jpg" alt="" /></div>
+            </div>
+		   <div class="item">
+              <div class="degree-wrap"> <img src="assets/images/fire3.jpg" alt="" /></div>
+            </div>
+		   
+	  </div>
+	  
+	   <div class="laminates-title  mt-5">MIKASA X RKDS ORIGAMI DOORS COLLECTION</div>
+    <div class="blueline"></div> 
+	   <div class="subtitle">The word "origami" comes from two Japanese words - "ori" which means "folding", and "kami" which means "paper". This art form has evolved and is now popular all over the world. Inspired by the art of origami, Mikasa incorporates similar folding techniques into the designs you’ll find in our Origami doors collection. </div>
+	  <div class="owl-carousel 3slider">
+        <div class="item">
+              <div class="degree-wrap"> <img src="assets/images/designer-doorsets1.jpg" alt="" />
+			<div class="title-part">
+            <h4 class="title">ORIGAMO</h4>
+          </div>
+			</div>
+            </div>
+		   <div class="item">
+              <div class="degree-wrap"> <img src="assets/images/designer-doorsets2.jpg" alt="" />
+			   <div class="title-part">
+            <h4 class="title">FLEXA</h4>
+          </div>
+			   </div>
+            </div>
+		  <div class="item">
+              <div class="degree-wrap"> <img src="assets/images/designer-doorsets3.jpg" alt="" />
+			  <div class="title-part">
+            <h4 class="title">PAPYRUS</h4>
+          </div>
+			  </div>
+            </div>
+		   <div class="item">
+              <div class="degree-wrap"> <img src="assets/images/designer-doorsets4.jpg" alt="" />
+			   <div class="title-part">
+            <h4 class="title">TANGRAM</h4>
+          </div>
+			   </div>
+            </div>
+      
+    </div>
+    
+     <div class="laminates-title  mt-5">Healthcare Doors Collection</div>
+    <div class="blueline"></div> 
+	   <div class="subtitle">Available with or without vision panels, Mikasa Speciality Doorsets are constructed for areas exposed to high levels of radiation such as hospitals and laboratories. Besides addressing issues such as hygiene, infection control, accessibility, and security, these doors are designed to achieve optimum levels of sound reduction of up to 31 DB.</div>
+	  <div class="owl-carousel 3slider">
+	       <div class="item">
+              <div class="degree-wrap"> <img src="assets/images/speciality-doorsets2.jpg" alt="" />
+              <div class="title-part">
+            <h4 class="title">Lead Line Doors</h4>
+          </div>
+              </div>
+            </div>
+            <div class="item">
+              <div class="degree-wrap"> <img src="assets/images/speciality-doorsets3.jpg" alt="" />
+              <div class="title-part">
+            <h4 class="title">Acoustic Doors</h4>
+          </div>
+              </div>
+            </div> 
+           <div class="item">
+              <div class="degree-wrap"> <img src="assets/images/speciality-doorsets1.jpg" alt="" />
+              <div class="title-part">
+            <h4 class="title">Fire Rated Doors</h4>
+          </div>
+              
+              </div>
+            </div> 
+             <div class="item">
+              <div class="degree-wrap"> <img src="assets/images/non-fire-rated-door.jpg" alt="" />
+              <div class="title-part">
+            <h4 class="title">Non Fire Rated Door</h4>
+          </div>
+              
+              </div>
+            </div>
+		 
+		  
+    </div>
+	  
+	  
+	 
+	  
+	  <div class="laminates-title  mt-5">Dura Collection</div>
+    <div class="blueline"></div> 
+	  <div class="subtitle">Short for Durability, Dura designer doors come with 5 layers of tubular core and a 6-side protection that shields them from the hostile weather, making them perfect for both residential and commercial ecosystems. If you’re looking for high quality doors that are built to stand the test of time. Door Design, your search ends at Dura.</div>
+	  <div  id="duraCollection">
+	  <div class="owl-carousel 3slider">
+	      <div class="item">
+              <div class="degree-wrap"> <img src="assets/images/dura1.jpg" alt="" /></div>
+            </div>
+            <div class="item">
+              <div class="degree-wrap"> <img src="assets/images/dura2.jpg" alt="" /></div>
+            </div>
+            <div class="item">
+              <div class="degree-wrap"> <img src="assets/images/dura3.jpg" alt="" /></div>
+            </div>
+	      
+    </div>
+		  </div>
+  </div>
+</section>
+<section class="about-bg" style="margin-top:50px; margin-bottom:80px;">
+  <div class="bgwhite">
+    <div class="container">
+      <h2 class="about-title">About Mikasa Doors</h2>
+      <p>When we think of a door, we think of wood and the craftsman who would create it. In a market served by traditional flush doors, Mikasa doors and frames introduces a revolutionary concept. It offers factory finished, ready to use door sets (Door + Frame) to suit every room and purpose. All the components – door leaf, frame and architectural ironmongery – work together as a unified product, meeting certified performance levels. The Door and Frame set are carefully selected and tested to provide a coordinated, fit for purpose, certified package, offering comprehensive product performance and life cycle resilience. If you are looking for premium quality doorsets, your search ends here.
+</p>
+
+    </div>
+  </div>
+</section>
+<section class="why-choose-us">
+  <div class="container">
+    <div class="laminates-title">Why Mikasa Doors</div>
+    <div class="blueline"></div>
+    <div class="row">
+      <div class="col-lg-6 col-xl-4">
+        <div class="cardbox">
+          <div class="title1">Perfect All-in-One Package</div>
+          <p>Complete Door Solution as wooden doors, frames and accessories are shipped from factory as a fully finished single doors & doorsets.</p>
+        </div>
+      </div>
+      <div class="col-lg-6 col-xl-4">
+        <div class="cardbox">
+          <div class="title1">Lifelong Quality Assured</div>
+          <p>Superior doors and frames design, manufacturing and installation processes result in lifetime performance. The wooden doors & doorsets are backed with a 5 year performance guarantee.</p>
+        </div>
+      </div>
+      <div class="col-lg-6 col-xl-4">
+        <div class="cardbox ">
+          <div class="title1">Everything Factory Made</div>
+          <p>Aesthetics, Fit and Finish are superior. UV Lacquer and polishing line is used in the process following the latest European Practices.</p>
+        </div>
+      </div>
+      <div class="col-lg-6 col-xl-4">
+        <div class="cardbox mh335">
+          <div class="title1">Doors and Frames Made from Same Materials</div>
+          <p>Engineered wooden doors, door frame and panel have matching look & finish decorative veneer and laminate are made in-house. This isn’t possible through traditional methods where the frame and panel come from different vendors and are hand finished on site.</p>
+        </div>
+      </div>
+       <div class="col-lg-6 col-xl-4">
+        <div class="cardbox mh335">
+          <div class="title1">Doors and Frames Made as per Actual Sizes</div>
+          <p>The factory finished wooden doors and frames don’t require resizing, unlike those made using traditional methods. The product looks new for a lifetime as the factory finish lasts for a long time.</p>
+        </div>
+      </div>
+      <div class="col-lg-6 col-xl-4">
+        <div class="cardbox mh335">
+          <div class="title1">Higher Value for Money</div>
+          <p>Cost for Mikasa Doors & Frames is known upfront unlike traditional methods where it is disaggregated. Time and effort spent in buying wood and supervising onsite construction is eliminated. Being factory finished, Mikasa Wooden Doors and Frames require no polishing or regular maintenance.</p>
+        </div>
+      </div>
+     
+      
+    </div>
+  </div>
+</section>
+<!--
+<div class="features">
+	<div class="container">
+		<div class="laminates-title">FEATURES</div>
+		<div class="blueline"></div>
+		<div class="row">
+			<div class="col-sm-2">
+			<div class="fbox">
+				<figure><img src="assets/images/abrasion-resistant-highly-durable.png"></figure>
+				<div class="">Abrasion Resistant</div>
+				</div>
+			</div>
+				<div class="col-sm-2">
+			<div class="fbox">
+				<figure><img src="assets/images/anti-bacterial.png"></figure>
+				<div class="">Anti Bacterial</div>
+				</div>
+			</div>
+			<div class="col-sm-2">
+			<div class="fbox">
+				<figure><img src="assets/images/excellent-hygiene-properties.png"></figure>
+				<div class="">Excellent Hygiene Properties</div>
+				</div>
+			</div>
+				<div class="col-sm-2">
+			<div class="fbox">
+				<figure><img src="assets/images/fire-resistant.png"></figure>
+				<div class="">Fire Resistant</div>
+				</div>
+			</div>
+				<div class="col-sm-2">
+			<div class="fbox">
+				<figure><img src="assets/images/chemicals-organic-solvents-resistant.png"></figure>
+				<div class="">Chemicals &amp; Organic Solvents Resistant </div>
+				</div>
+			</div>
+			<div class="col-sm-2">
+			<div class="fbox">
+				<figure><img src="assets/images/water-resistant.png"></figure>
+				<div class="">Water Resistant</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	</div>-->
+<footer class="footer">
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-6">
+        <div class="cright">Copyright 2024 © Greenlam Industries Limited. All rights reserved. </div>
+      </div>
+      <div class="col-sm-3">
+        <div class="cright"><a href="https://www.mikasadoors.com/privacy-policy" target="_blank">Privacy Policy</a> | <a href="https://www.mikasadoors.com/terms" target="_blank">Terms & Conditions</a></div>
+      </div>
+      <div class="col-sm-3">
+        <div class="flogo"><img src="assets/images/footer-logo.png" /></div>
+      </div>
+    </div>
+  </div>
+</footer>
+<a href="#" class="back-to-top d-flex align-items-center justify-content-center"><img src="assets/images/back-to-top.png" /></a> 
+<script src="assets/js/bootstrap.bundle.min.js"></script> 
+<script src="assets/js/owl.carousel.min.js"></script> 
+	 <script>
+            $(document).ready(function() {
+              $('.3slider').owlCarousel({
+                loop: true,
+                margin: 30,
+				  
+                responsiveClass: true,
+				  
+                responsive: {
+                  0: {
+                    items: 1,
+                    nav: true,
+                  },
+                  600: {
+                    items: 2,
+                    nav: false
+                  },
+                  1000: {
+                    items: 3,
+                    nav: true,
+                    loop: false,
+                    margin: 30
+                  }
+                }
+              })
+				
+				
+				 $('#duraCollection .owl-carousel').owlCarousel({
+                loop: true,
+                margin: 15,
+                responsiveClass: true,				  
+                responsive: {
+                  0: {
+                    items: 3,
+                    nav: true
+                  },
+                  600: {
+                    items: 4,
+                    nav: true,
+                  },
+                  1000: {
+                    items: 6,
+                    nav: true,
+                    loop: false,
+                    margin: 15
+                  }
+                }
+              })
+            })
+		 
+		  
+		 
+		 
+          </script>  
+<script src="assets/js/main.js"></script> 
+
+<script src='https://stagingagldashboard.adv8.co/common/js/webform_self.js'></script> 
+<script>WEBFORM.init(['<FORM_NAME>',1603]);
+WEBFORM.loadForm();</script> 
+<script>
+   
+   var getQueryString = function ( field, url ) {
+    var href = url ? url : window.location.href;
+    var reg = new RegExp( '[?&]' + field + '=([^&#]*)', 'i' );
+    var string = reg.exec(href);
+    return string ? string[1] : null;
+}
+utm_medium=getQueryString('utm_medium');
+$('#utm_medium').val(utm_medium);
+
+utm_campaign=getQueryString('utm_campaign');
+$('#utm_campaignname1').val(utm_campaign);
+
+utm_keyword=getQueryString('utm_keyword');
+$('#utm_keyword').val(utm_keyword);
+
+utm_source=getQueryString('utm_source');
+$('#utm_source').val(utm_source);
+
+
+
+
+    $(document).ready(function(){
+
+       
+
+            var pageURL = $(location).attr("href");
+
+            //alert(pageURL);
+
+     $('#href').val(pageURL);  
+     
+    
+
+    });
+    
+        $(document).ready(function(){
+
+       
+
+            var pageURL1 = $(location).attr("href");
+
+            //alert(pageURL1);
+
+     $('#ip_url').val(pageURL1);  
+     
+    
+
+    });
+   
+   
+   
+function sendHeight(){
+    if(parent.postMessage){
+        var height= document.getElementById('webform_container').offsetHeight;
+        parent.postMessage(height, '*');
+    }
+}
+
+// Create browser compatible event handler.
+var eventMethod = window.addEventListener ? "addEventListener" : "attachEvent";
+var eventer = window[eventMethod];
+var messageEvent = eventMethod == "attachEvent" ? "onmessage" : "message";
+
+// Listen for a message from the iframe.
+eventer(messageEvent, function(e) {
+
+    if (isNaN(e.data)) return;
+
+    sendHeight();
+
+}, false);
+
+//greenman 
+
+jQuery(document).ready(function(){
+	
+	jQuery('#elm_textbox_1432641948909_City').parent().parent().hide();
+	jQuery('#elm_textbox_1432641948909_City').removeAttr('required');
+	
+    jQuery('.elm_checkbox_1432642227806_Product').click(function() {
+        if(jQuery('.elm_checkbox_1432642227806_Product:checked').length) 
+            jQuery('.elm_checkbox_1432642227806_Product').removeAttr('required');
+        else 
+            jQuery('.elm_checkbox_1432642227806_Product').attr('required', 'required');
+     });
+
+	jQuery('#elm_textbox_1432642077221_StateOther').parent().parent().remove();
+	jQuery('#elm_textbox_1432642080170_CityOther').parent().parent().remove();
+	
+	jQuery('#elm_select_1432641944049_Country').change(function() {
+		if(jQuery(this).val()=='India'){
+			jQuery('#elm_select_1432641944049_State').parent().parent().show();
+			jQuery('#elm_select_1432641944049_City').parent().parent().show();
+            // jQuery('#elm_select_1432641944049_State').attr('required', 'required');
+            // jQuery('#elm_select_1432641944049_City').attr('required', 'required');
+			
+			jQuery('#elm_textbox_1432641948909_City').parent().parent().hide();
+			jQuery('#elm_textbox_1432641948909_City').removeAttr('required');
+			
+            //jQuery('#elm_textbox_1432642077221_StateOther').parent().parent().hide();
+			//jQuery('#elm_textbox_1432642080170_CityOther').parent().parent().hide();
+		} else {
+			jQuery('#elm_select_1432641944049_State').parent().parent().hide();
+			jQuery('#elm_select_1432641944049_City').parent().parent().hide();
+            jQuery('#elm_select_1432641944049_State').removeAttr('required');
+            jQuery('#elm_select_1432641944049_City').removeAttr('required');
+			
+			jQuery('#elm_textbox_1432641948909_City').parent().parent().show();
+			jQuery('#elm_textbox_1432641948909_City').attr('required', 'required');
+			//jQuery('#elm_textbox_1432642077221_StateOther').parent().parent().hide();
+			//jQuery('#elm_textbox_1432642080170_CityOther').parent().parent().hide();
+		}
+		jQuery.ajax({
+        url: 'https://www.mikasadoors.com/post-forms/get_country_states.php?action=2&country=India',
+        dataType: 'json',
+        type: 'GET',
+        success: function(data) {
+            var select = jQuery('select#elm_select_1432641944049_State');
+            if(select.prop) {
+                var options = select.prop('options');
+            } else {
+                var options = select.attr('options');
+            }
+            jQuery('option', select).remove();
+			options[options.length] = new Option('Select State','');
+            jQuery.each(data, function(v,state) {
+                options[options.length] = new Option(state,state);
+            });
+        }
+     });	
+	});
+		
+	
+
+	 
+jQuery('#elm_select_1432641944049_State').change(function() {
+		if(jQuery(this).val() != 'Other'){
+			jQuery.ajax({
+				url: 'https://www.mikasadoors.com/post-forms/get_country_states.php?action=1&state='+jQuery(this).val(),
+				dataType: 'json',
+				type: 'GET',
+				success: function(data) {
+					var select = jQuery('select#elm_select_1432641944049_City');
+					if(select.prop) {
+						var options = select.prop('options');
+					} else {
+						var options = select.attr('options');
+					}
+					jQuery('option', select).remove();
+					options[options.length] = new Option('Select City','');
+					jQuery.each(data, function(v,city) {
+						options[options.length] = new Option(city,city);
+					});
+				// 	options[options.length] = new Option('Other','Other');
+				}
+			});	
+			//jQuery('#elm_textbox_1432642077221_StateOther').parent().parent().hide();
+			//jQuery('#elm_textbox_1432642080170_CityOther').parent().parent().hide();
+			jQuery('#elm_select_1432641944049_City').parent().parent().show();
+		} else {
+			//jQuery('#elm_textbox_1432642077221_StateOther').parent().parent().show();
+			//jQuery('#elm_textbox_1432642080170_CityOther').parent().parent().show();
+			jQuery('#elm_select_1432641944049_City').parent().parent().hide();
+		}
+	});
+	
+	/*jQuery('#elm_select_1432641944049_City').change(function() {
+		if(jQuery(this).val() != 'Other'){			
+			jQuery('#elm_textbox_1432642080170_CityOther').parent().parent().hide();
+		} else {
+			jQuery('#elm_textbox_1432642080170_CityOther').parent().parent().show();
+		}		
+	});*/
+	
+});
+</script> 
+
+</body>
+</html>

@@ -1,0 +1,342 @@
+@import url('https://fonts.googleapis.com/css2?family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+:root {
+  scroll-behavior: smooth;
+}
+
+body {
+ font-family: 'PT Sans', sans-serif;
+  color: #000000; font-weight: 400; background: #f8f8f8;
+}
+
+
+a {
+  color: #333333;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #000000;
+  text-decoration: none;
+}
+
+
+img{ max-width: 100%;}
+
+/*--------------------------------------------------------------
+# Top Banner
+--------------------------------------------------------------*/
+.header-top{background:rgba(255, 255, 255, 0.8); padding-top:5px; padding-bottom:5px; margin-bottom:10px;}
+.bannerbg{ background: url("../images/top-banner.jpg") no-repeat 0 0; padding: 0px 0 85px; width: 100%; background-size: cover; margin-bottom: 50px; position: relative;}
+.bannerbg2{ background: url("../images/thankpage.jpg") no-repeat 0 0; padding: 33px 0 200px; width: 100%; background-size: cover; }
+.pt150{ padding-top: 100px !important; padding-bottom: 100px !important;}
+.contact{ background: rgba(0,0,0,0.5); padding: 2px; margin-top:5px; color: #ffffff; font-size: 34px; text-align: center; border-radius: 5px; line-height: 38px;}
+.fs32{ font-size: 32px;}
+.mb-2 {  margin-bottom: .3rem !important;}
+
+.enquery-form{ background: rgba(255,255,255,0.9); padding: 15px 20px; border-radius: 5px; margin-top: 50px;}
+.enquery-form .mb-2{ margin-bottom:0.9rem !important}
+.enquery-title{ font-size: 27px; color:#f15931; padding-bottom: 3px; }
+.custom-control{ border-radius: 0px; border: 1px solid #cccccc;     padding: 8px 10px;}
+.form-button{background: #f15931; color: #fff; font-size: 20px; padding: 4px 40px;}
+.form-label { margin-bottom: .1rem;}
+.h50{height:50px;}
+
+.shape-bottom {
+    position: absolute;
+    top: auto;
+    bottom: -1px;
+    left: 0;
+    right: 0;
+	
+}
+svg {
+    overflow: hidden;
+    vertical-align: middle;
+}
+
+/*--------------------------------------------------------------
+# Laminates
+--------------------------------------------------------------*/
+.laminates{ padding-bottom: 40px;}
+.laminates-title { text-transform: uppercase; text-align: center; color: #333333; font-weight: 700; font-size: 34px;}
+.blueline{ width: 100px; height: 3px; background: #f15931; margin: 0 auto 30px;}
+.subtitle{ color: #333333; font-weight: 500; font-size: 15px; text-align: center; padding-bottom: 50px; -bottom: 50px;  margin: 0 auto;}
+.pro-details{ padding: 0px; margin: 0px; padding-right: 25px; }
+.pro-details li{ list-style-type: none; padding-bottom: 15px; font-size: 15px; padding-left: 19px; background: url("../images/arrow.png") no-repeat 5px 9px;}
+.mb-30{ margin-bottom: 30px;}
+.degree-wrap {
+    position: relative;
+    overflow: hidden;
+    border-radius: 3px;
+}
+
+.degree-wrap:before {
+    position: absolute;
+    content: '';
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0.5;
+   /* background: linear-gradient(transparent, #000);*/
+}
+
+.degree-wrap img {
+	width: 100%; }
+
+.degree-wrap .title-part {
+  position: absolute;
+  left: 0%;
+  bottom: 0%;
+  padding: 9px 27px 9px;
+  opacity: 1;
+  transition: all 0.3s ease;
+  background: rgba(241, 89, 49, 0.9);
+  display: inline-block;
+
+}
+
+.degree-wrap .title-part .title {
+    margin: 0;
+	color: #ffffff; text-transform: uppercase;
+  font-size: 19px;}
+
+.degree-wrap .content-part, .rs-team.style1 .team-item:after {
+    /* width: calc(100% - 60px); */
+	height: calc(100% - 132px);}
+
+.degree-wrap .content-part {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%) rotateY(90deg);
+    background: rgba(0, 113, 181, 0.9);
+    border-radius: 3px;
+    padding: 10px 0px 10px 10px;
+    color: #ffffff;
+    opacity: 0;
+    transition: all 0.3s ease;
+}
+
+.degree-wrap .content-part .title {
+    margin-bottom: 12px;
+  text-transform: uppercase;
+  font-size: 18px;
+  font-weight: bold;
+}
+.degree-wrap .content-part .title a {
+    color: #ffffff;
+}
+
+.rs-degree.style1 .degree-wrap .content-part .desc {
+    margin-bottom: 15px;
+}
+
+ .degree-wrap .content-part .btn-part a {
+    text-transform: uppercase;
+    font-weight: 500;
+    color: #ffffff;
+    padding-bottom: 0;
+    border-bottom: 1px solid #ffffff;
+}
+.even{ margin-top: -100px;}
+
+
+.degree-wrap:hover .title-part {
+    bottom: -60px;
+    opacity: 0;
+}
+
+.degree-wrap:hover .content-part {
+    transform: translate(-50%, -50%) rotateY(0);
+    opacity: 1;
+}
+	
+	.degree-wrap:hover .content-part {
+    transform: translate(-50%, -50%) rotateY(0);
+    opacity: 1;
+}
+
+.degree-wrap .content-part, .team-item:after {
+  width: calc(100% - 19px);
+  height: calc(100% - 20px);
+}
+.bannertext{display: flex;
+  align-items: center; justify-content: center;}
+.bannerTitle{ 
+  font-size: 35px;
+  font-weight: bold;
+  color: #fff;
+  text-align: center;
+ 
+  }
+  .bannerTitle span{ 
+  font-size: 45px;  color: #f15931;}
+
+
+
+
+
+/*--------------------------------------------------------------
+# About us
+--------------------------------------------------------------*/
+.about-bg{ background:url("../images/about-bg.png") no-repeat right 0; padding: 50px 0; padding-right: 30%;}
+.bgwhite{ background: #f1f1f1; padding: 30px 0; padding-left: 22%; font-size: 18px; padding-right: 30px; }
+.about-title{ font-size: 25px; color: #333333; padding-bottom: 10px;}
+.aboutText{background: #f8f8f8; position: relative;  top: -71px;  padding: 20px;  width: 94%;}
+.mt100{ margin-top: 100px;}
+.aboutus{ margin-bottom: 0px;}
+.owl-dots{ display: none;}
+
+/*--------------------------------------------------------------
+# why choose us
+--------------------------------------------------------------*/
+
+.why-choose-us{ margin: 50px 0; background: #f1f1f1; padding: 30px;}
+.cardbox{ background: #ffffff; padding: 15px 25px; font-size: 16px; color: #333333; margin-bottom: 30px; min-height: 214px; text-align: center;}
+.title1{ font-size: 21px; text-transform: uppercase; text-align: center; padding-bottom: 10px;}
+
+.mh335{min-height: 288px !important;}
+/*--------------------------------------------------------------
+# FEATURES
+--------------------------------------------------------------*/
+
+.features{ margin:0 0 70px 0;}
+.fbox{ text-align: center; font-size: 18px; font-weight: 700; }
+
+
+.footer{ background: #ebe9e9; padding: 20px 0;}
+.flogo{ text-align: right;}
+.cright{ padding: 10px 0;}
+.featuresbox{position: relative;  top: -21px; width: 90%; margin: 0 auto;}
+.bg1{ background: #f0eeee; padding: 15px 15px 30px; border-radius: 10px; text-align: center; color: #000; margin-bottom: 30px;}
+.bg2{ background: #ec712f; padding: 15px 15px 30px; border-radius: 25px; text-align: center; color: #fff; margin-bottom: 30px;}
+.bg3{ background: #b68559; padding: 15px 15px 30px; border-radius: 25px; text-align: center; color: #fff; margin-bottom: 30px;}
+.bg4{ background: #c4a890; padding: 15px 15px 30px; border-radius: 25px; text-align: center; color: #fff; margin-bottom: 30px;}
+.bg5{ background: #3b374f; padding: 15px 15px 30px; border-radius: 25px; text-align: center; color: #fff; margin-bottom: 30px;}
+.bg6{ background: #724026; padding: 15px 15px 30px; border-radius: 25px; text-align: center; color: #fff; margin-bottom: 30px;}
+
+.fimg{background: #fff;  border-radius: 100%;  height: 111px;  width: 111px;  display: inline-block;  line-height: 111px; margin: 10px 0 20px;}
+.ftitle{ font-size: 20px; font-weight: 600;}
+/*--------------------------------------------------------------
+# Back to top button
+--------------------------------------------------------------*/
+.back-to-top {
+  position: fixed;
+  visibility: hidden;
+  opacity: 0;
+  right: 15px;
+  bottom: 15px;
+  z-index: 99999;
+  background: #333;
+  width: 40px;
+  height: 40px;
+  border-radius: 4px;
+  transition: all 0.4s;
+}
+
+
+
+
+.back-to-top.active {
+  visibility: visible;
+  opacity: 1;
+}
+
+.duraCollection{border: 1px solid #ccc;  padding: 0 30px 30px;
+  overflow: hidden;
+  margin-bottom: 20px;}
+
+
+.owl-prev, .owl-next {
+        width: 50px;
+        height: 100px !important;
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        display: block !important;
+        border:0px solid black !important;
+	font-size: 69px !important;
+  background: rgba(0,0,0,0.6) !important;
+  color: #fff !important;
+    }
+    .owl-prev { left: -50px;  }
+    .owl-next { right: -50px;   }
+    .owl-prev i, .owl-next i {transform : scale(2,5); color: #ccc;}
+
+@media screen and (max-width: 1400px) {
+    .contact {  font-size: 30px;}
+    .fs32 {  font-size: 29px;}
+    .pro-details li{font-size:14px;}
+    .bgwhite { padding-left: 8%;font-size: 16px;}
+    .cardbox {    font-size: 16px;}
+}
+
+
+ @media only screen and (min-width: 768px) and (max-width: 1024px)  {
+    
+    .fbox{font-size: 12px;}
+}
+
+
+
+@media screen and (max-width: 767px) {
+    
+    .card-box .col-sm-5{text-align: center;}
+    .fs32{ font-size: 24px;}
+   .contact{ background: rgba(0,0,0,0.5); padding: 10px; color: #ffffff; font-size: 28px; text-align: center; border-radius: 5px; margin-bottom: 37px;} 
+   .mlogo{text-align:center; padding-bottom:20px;}
+   .card-box img{text-align:center;}
+   .pro-details{padding-left:15px;}
+   .product-name{padding-left:15px;}
+   .about-bg{padding-right: 0}
+   .bgwhite{padding-left:15px; padding-right: 15px}
+   .about-title{text-align: center; font-size: 29px;}
+   .fbox{padding-bottom:30px;}
+   .cright {padding: 10px 0;font-size: 12px; text-align: center;}
+   .flogo{text-align: center;}
+	.bannerTitle{   font-size: 20px;padding-bottom: 20px; padding-top:30px;}
+	.bannerTitle span{  font-size: 25px;}
+	.title1{  font-size: 16px;}
+	.enquery-form{margin-top:10px;}
+.laminates-title { font-size: 22px;}
+	.enquery-form .mb-2 {  margin-bottom: 0.3rem !important;}
+	.custom-control {  padding: 3px 10px;}
+	.owl-prev {  left: 0;}
+	.owl-next {  right: 0;}
+	.owl-prev, .owl-next{background:none !important;}
+	.cardbox{    font-size: 13px;  }
+	.why-choose-us{padding:30px 0px;}
+	.cardbox{margin-bottom: 13px;}
+}
+
+
+/*--------------------------------------------------------------
+# Disable aos animation delay on mobile devices
+--------------------------------------------------------------*/
+@media screen and (max-width: 768px) {
+ .row-cols-5 > * {
+    flex: 0 0 auto;
+    width: 50%;
+}
+}
+
+.cardText{ padding: 15px; min-height: 255px;}
+
+
+
+
+@media (max-width:991px){
+	.mh335 {
+  min-height: auto !important;
+}
+.cardbox{min-height: auto; padding: 15px 15px;}
+	}
+	
+	@media (min-width:992px) and (max-width:1199px){
+	.mh335 {
+  min-height: 240px !important;
+}
+.cardbox{min-height: 240px;}
+	}
